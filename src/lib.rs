@@ -1,20 +1,22 @@
 #![no_std]
 
-/// Strips a prefix from a slice
+/// Returns a slice with the prefix removed.
 ///
-/// Returns the remaining sequence if `data` starts with `prefix`.
+/// If `data` starts with `prefix`, returns the remaining sequence.
 ///
 /// If `data` does not start with this prefix, `None` is returned.
-/// 
+///
 /// ```
 /// use strip_slice_prefix::strip_prefix;
-/// 
+///
 /// let auth_header = b"Basic VGhlIGFuc3dlciBpcyA0Mi4K";
 /// let credentials = strip_prefix(auth_header, b"Basic ").unwrap();
 /// assert_eq!(credentials, b"VGhlIGFuc3dlciBpcyA0Mi4K");
 /// ```
 pub fn strip_prefix<'a, T>(data: &'a [T], prefix: &[T]) -> Option<&'a [T]>
-where T: Eq {
+where
+    T: Eq,
+{
     let mut remaining = data;
     for prefix_char in prefix {
         if prefix_char == remaining.first()? {
@@ -25,7 +27,6 @@ where T: Eq {
     }
     Some(remaining)
 }
-
 
 #[cfg(test)]
 mod tests {

@@ -1,7 +1,7 @@
 [![Build](https://github.com/UgnilJoZ/strip-slice-prefix/actions/workflows/rust.yaml/badge.svg)](https://github.com/UgnilJoZ/strip-slice-prefix/actions/workflows/rust.yaml)
 [![Crates.io](https://img.shields.io/crates/v/strip-slice-prefix.svg)](https://crates.io/crates/strip-slice-prefix)
 [![Documentation](https://docs.rs/strip-slice-prefix/badge.svg)](https://docs.rs/strip-slice-prefix/)
-[![dependency status](https://deps.rs/crate/strip-slice-prefix/0.1.0/status.svg)](https://deps.rs/crate/strip-slice-prefix/0.1.0)
+[![dependency status](https://deps.rs/repo/github/UgnilJoZ/strip-slice-prefix/status.svg)](https://deps.rs/repo/github/UgnilJoZ/strip-slice-prefix)
 
 # strip-slice-prefix
 
