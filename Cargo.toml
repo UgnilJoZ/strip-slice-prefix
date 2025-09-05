@@ -1,0 +1,12 @@
+[package]
+name = "strip-slice-prefix"
+version = "0.1.0"
+authors = ["Jan Ole Zabel <jan.zabel@posteo.de>"]
+rust-version = "1.22.1"
+description = "A function that strips a prefix from a slice"
+repository = "https://github.com/UgnilJoZ/strip-slice-prefix"
+license = "MIT OR GPL-3.0-or-later"
+keywords = ["slice"]
+categories = ["no-std::no-alloc"]
+
+[dependencies]
